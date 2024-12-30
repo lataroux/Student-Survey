@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Course Survey Form </title>
+    <link rel="stylesheet" href="survey.css" />
+    </head>
+    <body>
+      <main>
+    <h1 id="title">End-of-Course Survey Form </h1>
+    <p id="description"> <em>Thank you for your valuable input</em></p>
+    <form id="survey-form" action=">
+      <fieldset>
+        <label id="name-label"><b>Name:</b><input id="name" type="text" placeholder="Enter your name" name="name" class="form" required/> 
+        </label>
+        <label id="email-label"><b>Student Email:</b><input id="email" type="email" placeholder="Enter your email" class="form" required/> 
+        </label> 
+       <label id="number-label"><b>Age</b><em>(optional)</em><b>:</b><input id="number"
+       type="number" placeholder="Age" min="17" max="99" class="form"/>
+       </label>
+              </fieldset>
+      </fieldset>
+      <fieldset>
+        <label for "dropdown"> What is your current academic level?<br>
+        <select id="dropdown" class="form">
+          <option value="">(select one)</option>
+            <option value="1">freshman</option>
+              <option value="2">sophomore</option>
+                <option value="3">junior</option>
+                <option value="4">senior</option>
+                </select>
+</fieldset>
+<fieldset>
+  <legend>Would you recommend this course to other students? </legend>
+  <label for="yes"><input value="1" id="yes" type="radio" name="recommend" class="form" checked/>Yes</label>
+  <label for="maybe"><input value="3" id="maybe" type="radio" name="recommend" class="form" />Maybe</label>
+  <label for="no"><input value="2" id="no" type="radio" name="recommend" class="form"/>No</label>
+  </fieldset>
+  <fieldset>
+    <legend>What would you like to see improved? (select all that apply)</legend>
+    <input id="lectures" type="checkbox" name="features" value="lectures" class="form"><label for= "lectures">lectures</label>
+    <br>
+    <input id="discussions" type="checkbox" name="features" value="discussions" class="form"><label for="discussions">discussions</label>
+    <br>
+    <input id="assignments" type="checkbox" name="features" value="assignments"><label for="assignments">weekly assignments</label>
+    <br>
+    <input id="textbook" type="checkbox" name="features" value="textbook" class="form"><label for="textbook">textbook</label>
+    <br>
+    <input id="guide" type="checkbox" name="features" class="form" value="guide"><label for="guide">study guide</label>
+    <br>
+    <input id="quiz" type="checkbox" name= "features" class="form" value="quiz"><label for="quiz">quizzes</label>
+    <br>
+    <input id="exam" type="checkbox" name= "features" class="form" value="exam"><label for="exam">exams</label>
+    </fieldset>
+    <fieldset>
+    <legend>Additional comments (optional): </legend>
+<textarea id="comments" name="comments ." rows="7" cols="50" class="form" placeholder="My favorite part of the course was...">
+</textarea>
+        </fieldset>
+<input id="submit" type="submit"  class="form">
+</form>
+</main>
+</body>
+</html>
